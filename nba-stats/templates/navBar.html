@@ -1,0 +1,21 @@
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" style="position: relative; z-index: 100;">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#"><strong>NBA Stats</strong></a>
+		</div>
+		
+		<div>
+			<ul class="nav navbar-nav">
+                {% if page == 'searchByPlayer' %}<li class="active"><a href="/searchByPlayer"><span class="glyphicon glyphicon-user"></span> SearchByPlayer</a></li>
+				{% else %}<li><a href="/searchByPlayer"><span class="glyphicon glyphicon-user"></span> SearchByPlayer</a></li>{% endif %}
+
+                {% if page == 'searchByTeam' %}<li class="active"><a href="/searchByTeam?season=14_15"><span class="glyphicon glyphicon-king"></span> SearchByTeam</a></li>
+				{% else %}<li><a href="/searchByTeam?season=14_15"><span class="glyphicon glyphicon-king"></span> SearchByTeam</a></li>{% endif %}
+
+                {% if page == 'filterPlayer' %}<li class="active"><a href="/filterPlayer?season=14_15"><span class="glyphicon glyphicon-filter"></span> FilterPlayer</a></li>
+				{% else %}<li><a href="/filterPlayer?season=14_15"><span class="glyphicon glyphicon-filter"></span> FilterPlayer</a></li>{% endif %}
+            </ul>
+		</div>
+	</div>
+</nav>
+<br><br>

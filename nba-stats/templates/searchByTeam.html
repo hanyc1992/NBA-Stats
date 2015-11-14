@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	{% include "head.html" ignore missing%}
+	<body>
+        {% include "navBar.html" ignore missing%}
+		<div class="container col-md-10">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2>Teams <small> {{ seasonDisplay }} </small></h2>
+				</div>
+
+				<div class="panel-body">
+                    <table class="table table-striped">
+                        <tbody>
+                            {% for item in teams %}
+                                <tr>{% for itemCol in item %}
+                                    <td><a href = "/playerInTeam?season={{ season }}&team={{ itemCol }}">{{ itemCol }}</a></td>
+                                {% endfor %}</tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+				</div>
+			</div>
+		</div>
+
+		<div class="container col-md-2">
+            <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Season <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="/searchByTeam?season=00_01">2000-01</a></li>
+                <li><a href="/searchByTeam?season=01_02">2001-02</a></li>
+                <li><a href="/searchByTeam?season=02_03">2002-03</a></li>
+                <li><a href="/searchByTeam?season=03_04">2003-04</a></li>
+                <li><a href="/searchByTeam?season=04_05">2004-05</a></li>
+                <li><a href="/searchByTeam?season=05_06">2005-06</a></li>
+                <li><a href="/searchByTeam?season=06_07">2006-07</a></li>
+                <li><a href="/searchByTeam?season=07_08">2007-08</a></li>
+                <li><a href="/searchByTeam?season=08_09">2008-09</a></li>
+                <li><a href="/searchByTeam?season=09_10">2009-10</a></li>
+                <li><a href="/searchByTeam?season=10_11">2010-11</a></li>
+                <li><a href="/searchByTeam?season=11_12">2011-12</a></li>
+                <li><a href="/searchByTeam?season=12_13">2012-13</a></li>
+                <li><a href="/searchByTeam?season=13_14">2013-14</a></li>
+                <li><a href="/searchByTeam?season=14_15">2014-15</a></li>
+            </ul>
+            </div>
+		</div>
+	</body>
+</html>

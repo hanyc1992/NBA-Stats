@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	{% include "head.html" ignore missing%}
+	<body>
+        {% include "navBar.html" ignore missing%}
+		<div class="container col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2>{{ playerName }}</h2>
+				</div>
+
+				<div class="panel-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Season</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="Team - Team a player played in.">TM</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="Games Played - The number of games a player or team has played.">GP</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="Games Started - The number of games a player or team has played as starter.">GS</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="Minutes - The number of minutes a player or team has played.">MIN</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="Field Goal Percentage - The percentage of field goals that a player makes. The formula to determine field goal percentage is: Field Goals Made/Field Goals Attempted.">FG%</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="3 Point Field Goal Percentage - The percentage of 3 point field goals that a player or team has made. The formula to determine 3 point field goal percentage is: 3 Point Field Goals Made/3 Point Field Goals Attempted.">3P%</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="Free Throw Percentage - The percentage of free throws that a player or team has made. The formula to determine free throw percentage is: Free Throws Made/Free Throws Attempted.">FT%</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="Offensive Rebounds - The number of rebounds a player or team has collected while they were on offense.">OREB</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="Defensive Rebounds - The number of rebounds a player or team has collected while they were on defense.">DREB</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="Rebounds - A rebound occurs when a player recovers the ball after a missed shot. This statistic is the number of total rebounds a player or team has collected on either offense or defense.">REB</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="Assists - An assist occurs when a player completes a pass to a teammate that directly leads to a made field goal.">AST</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="Steals - A steal occurs when a defensive player takes the ball from a player on offense, causing a turnover.">STL</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="Blocks - A block occurs when an offensive player attempts a shot, and the defense player tips the ball, blocking their chance to score.">BLK</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="Turnovers - A turnover occurs when the team on offense loses the ball to the defense. ">TOV</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="Personal Fouls - The total number of fouls that a player or team has committed.">PF</th>
+                                <th data-toggle="tooltip" data-placement="top" data-container="body" title="Points - The number of points a player or team has scored. A point is scored when a player makes a basket.">PTS</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            {% for item in stats %}
+                                <tr>
+                                    <td>{{ item.season }}</td>
+                                    <td>{{ item.team }}</td>
+                                    <td>{{ item.games }}</td>
+                                    <td>{{ item.gamesStarted }}</td>
+                                    <td>{{ item.minutes }}</td>
+                                    <td>{{ item.fieldGoalPercentage }}</td>
+                                    <td>{{ item.threePointsPercentage }}</td>
+                                    <td>{{ item.freeThrowPercentage }}</td>
+                                    <td>{{ item.offensiveRebounds }}</td>
+                                    <td>{{ item.defensiveRebounds }}</td>
+                                    <td>{{ item.totalRebounds }}</td>
+                                    <td>{{ item.assists }}</td>
+                                    <td>{{ item.steals }}</td>
+                                    <td>{{ item.blocks }}</td>
+                                    <td>{{ item.turnovers }}</td>
+                                    <td>{{ item.fouls }}</td>
+                                    <td>{{ item.points }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+				</div>
+			</div>
+		</div>
+	</body>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	{% include "head.html" ignore missing%}
+	<body>
+        {% include "navBar.html" ignore missing%}
+		<div class="container col-md-10">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2>Filter Player <small> {{ seasonDisplay }} </small></h2>
+				</div>
+
+				<div class="panel-body">
+                    <form role="form" class="form-inline" action="/filterResult?season={{ season }}" method="post">
+{#                        constraint 1#}
+                        <div class="form-group col-sm-4">
+                            <label for="attribute1">Attribute:</label>
+                            <select class="form-control" id="attribute1" name="attribute1">
+                                <option value="points">Points</option>
+                                <option value="totalRebounds">Rebounds</option>
+                                <option value="assists">Assists</option>
+                                <option value="steals">Steals</option>
+                                <option value="blocks">Blocks</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="compare1">Compare:</label>
+                            <select class="form-control" id="compare1" name="compare1">
+                                <option value=">=">Great Than</option>
+                                <option value="<=">Less Than</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="stats1">Stats:</label>
+                            <input type="text" class="form-control" placeholder="Enter a number" id="stats1" name="stats1">
+                        </div>
+{#                        constraint 2#}
+                        <div class="form-group col-sm-4">
+                            <label for="attribute2">Attribute:</label>
+                            <select class="form-control" id="attribute2" name="attribute2">
+                                <option value="points">Points</option>
+                                <option value="totalRebounds">Rebounds</option>
+                                <option value="assists">Assists</option>
+                                <option value="steals">Steals</option>
+                                <option value="blocks">Blocks</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="compare2">Compare:</label>
+                            <select class="form-control" id="compare2" name="compare2">
+                                <option value=">=">Great Than</option>
+                                <option value="<=">Less Than</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="stats2">Stats:</label>
+                            <input type="text" class="form-control" placeholder="Enter a number" id="stats2" name="stats2">
+                        </div>
+{#                        constraint 3#}
+                        <div class="form-group col-sm-4">
+                            <label for="attribute3">Attribute:</label>
+                            <select class="form-control" id="attribute3" name="attribute3">
+                                <option value="points">Points</option>
+                                <option value="totalRebounds">Rebounds</option>
+                                <option value="assists">Assists</option>
+                                <option value="steals">Steals</option>
+                                <option value="blocks">Blocks</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="compare3">Compare:</label>
+                            <select class="form-control" id="compare3" name="compare3">
+                                <option value=">=">Great Than</option>
+                                <option value="<=">Less Than</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="stats3">Stats:</label>
+                            <input type="text" class="form-control" placeholder="Enter a number" id="stats3" name="stats3">
+                        </div>
+
+                        <button type="submit" class="btn btn-default pull-left">Submit</button>
+                    </form>
+				</div>
+			</div>
+		</div>
+
+        <div class="container col-md-2">
+            <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                Season <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="/filterPlayer?season=00_01">2000-01</a></li>
+                <li><a href="/filterPlayer?season=01_02">2001-02</a></li>
+                <li><a href="/filterPlayer?season=02_03">2002-03</a></li>
+                <li><a href="/filterPlayer?season=03_04">2003-04</a></li>
+                <li><a href="/filterPlayer?season=04_05">2004-05</a></li>
+                <li><a href="/filterPlayer?season=05_06">2005-06</a></li>
+                <li><a href="/filterPlayer?season=06_07">2006-07</a></li>
+                <li><a href="/filterPlayer?season=07_08">2007-08</a></li>
+                <li><a href="/filterPlayer?season=08_09">2008-09</a></li>
+                <li><a href="/filterPlayer?season=09_10">2009-10</a></li>
+                <li><a href="/filterPlayer?season=10_11">2010-11</a></li>
+                <li><a href="/filterPlayer?season=11_12">2011-12</a></li>
+                <li><a href="/filterPlayer?season=12_13">2012-13</a></li>
+                <li><a href="/filterPlayer?season=13_14">2013-14</a></li>
+                <li><a href="/filterPlayer?season=14_15">2014-15</a></li>
+            </ul>
+            </div>
+		</div>
+	</body>
+</html>

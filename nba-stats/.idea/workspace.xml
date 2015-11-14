@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8a50e74b-29f8-43b6-8803-52cd88b5d295" name="Default" comment="" />
+    <ignored path="nba-stats.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/nba-stats$nba_stats.coverage" NAME="nba-stats Coverage Results" MODIFIED="1447485233315" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="nba-stats" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="nba-stats.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nba-stats.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <marker date="1447485176116" expanded="true" signature="1981:2015" placeholder="SELECT DISTI..playerTable..." />
+                <marker date="1447485176116" expanded="true" signature="1981:2028" placeholder="SELECT DISTI..playerTable..." />
+                <marker date="1447485176116" expanded="true" signature="4042:4234" placeholder="SELECT DISTI..playerTable..." />
+                <marker date="1447485176116" expanded="true" signature="4042:4235" placeholder="SELECT DISTI..playerTable..." />
+                <marker date="1447485176116" expanded="true" signature="4042:4241" placeholder="SELECT DISTI..playerTable..." />
+                <marker date="1447485176116" expanded="true" signature="4042:4242" placeholder="SELECT DISTI..playerTable..." />
+                <marker date="1447485176116" expanded="true" signature="4042:4248" placeholder="SELECT DISTI..playerTable..." />
+                <marker date="1447485176116" expanded="true" signature="4042:4249" placeholder="SELECT DISTI..playerTable..." />
+                <marker date="1447485176116" expanded="true" signature="5075:5100" placeholder="SELECT * FRO..playerTable..." />
+                <marker date="1447485176116" expanded="true" signature="5075:5113" placeholder="SELECT * FRO..playerTable..." />
+                <marker date="1447485176116" expanded="true" signature="5594:5637" placeholder="SELECT name ..teamTable..." />
+                <marker date="1447485176116" expanded="true" signature="6168:6213" placeholder="SELECT * FRO..teamTable..." />
+                <marker date="1447485176116" expanded="true" signature="6168:6277" placeholder="SELECT DISTI..teamTable..." />
+                <marker date="1447485176116" expanded="true" signature="6168:6302" placeholder="SELECT DISTI..teamTable..." />
+                <marker date="1447485176116" expanded="true" signature="6824:7035" placeholder="SELECT DISTI..playerTable..." />
+                <marker date="1447485176116" expanded="true" signature="7462:7487" placeholder="SELECT * FRO..playerTable..." />
+                <marker date="1447485176116" expanded="true" signature="7468:7476" placeholder="select name ..playerTable..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchHandler.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/searchHandler.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.354838">
+              <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchByPlayer.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/searchByPlayer.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.774194">
+              <caret line="18" column="102" selection-start-line="18" selection-start-column="102" selection-end-line="18" selection-end-column="102" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navBar.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/navBar.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7051282">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/playerInTeam.html" />
+        <option value="$PROJECT_DIR$/templates/playerStats.html" />
+        <option value="$PROJECT_DIR$/templates/searchByTeam.html" />
+        <option value="$PROJECT_DIR$/templates/filterPlayer.html" />
+        <option value="$PROJECT_DIR$/templates/filterResult.html" />
+        <option value="$PROJECT_DIR$/templates/searchByPlayer.html" />
+        <option value="$PROJECT_DIR$/templates/searchHandler.html" />
+        <option value="$PROJECT_DIR$/nba-stats.py" />
+        <option value="$PROJECT_DIR$/templates/navBar.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1860" />
+    <option name="height" value="1098" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nba-stats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nba-stats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nba-stats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nba-stats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nba-stats" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="recentsLimit" value="5" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager" selected="Python.nba-stats">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nba-stats" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nba-stats" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nba-stats" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nba-stats" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nba-stats" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nba-stats" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nba-stats" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nba-stats" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nba-stats" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="nba-stats" type="PythonConfigurationType" factoryName="Python" singleton="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="nba-stats" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nba-stats.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.nba-stats" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a50e74b-29f8-43b6-8803-52cd88b5d295" name="Default" comment="" />
+      <created>1446848379502</created>
+      <option name="number" value="Default" />
+      <updated>1446848379502</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1860" height="1098" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15959822" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2742616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/nba-stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1447485176116" expanded="true" signature="1981:2015" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="1981:2028" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4234" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4235" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4241" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4242" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4248" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4249" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5100" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5113" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5594:5637" placeholder="SELECT name ..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6213" placeholder="SELECT * FRO..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6277" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6302" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6824:7035" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7462:7487" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7468:7476" placeholder="select name ..playerTable..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/filterResult.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/filterPlayer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/searchByTeam.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="66" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/navBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba-stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1447485176116" expanded="true" signature="1981:2015" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="1981:2028" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4234" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4235" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4241" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4242" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4248" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4249" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5100" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5113" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5594:5637" placeholder="SELECT name ..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6213" placeholder="SELECT * FRO..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6277" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6302" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6824:7035" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7462:7487" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7468:7476" placeholder="select name ..playerTable..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/filterResult.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/filterPlayer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="30" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/searchByTeam.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="66" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/navBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba-stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1447485176116" expanded="true" signature="1981:2015" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="1981:2028" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4234" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4235" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4241" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4242" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4248" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4249" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5100" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5113" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5594:5637" placeholder="SELECT name ..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6213" placeholder="SELECT * FRO..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6277" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6302" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6824:7035" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7462:7487" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7468:7476" placeholder="select name ..playerTable..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/playerStats.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="51" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/playerInTeam.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/searchByTeam.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/searchByPlayer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/navBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="146" selection-start-line="12" selection-start-column="146" selection-end-line="12" selection-end-column="146" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba-stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1447485176116" expanded="true" signature="1981:2015" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="1981:2028" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4234" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4235" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4241" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4242" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4248" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4249" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5100" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5113" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5594:5637" placeholder="SELECT name ..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6213" placeholder="SELECT * FRO..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6277" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6302" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6824:7035" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7462:7487" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7468:7476" placeholder="select name ..playerTable..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/playerInTeam.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/searchByTeam.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/searchByPlayer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="63" selection-start-line="46" selection-start-column="63" selection-end-line="46" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/navBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba-stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1447485176116" expanded="true" signature="1981:2015" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="1981:2028" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4234" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4235" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4241" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4242" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4248" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4249" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5100" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5113" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5594:5637" placeholder="SELECT name ..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6213" placeholder="SELECT * FRO..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6277" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6302" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6824:7035" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7462:7487" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7468:7476" placeholder="select name ..playerTable..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/searchByPlayer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/navBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba-stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1447485176116" expanded="true" signature="1981:2015" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="1981:2028" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4234" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4235" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4241" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4242" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4248" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4249" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5100" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5113" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5594:5637" placeholder="SELECT name ..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6213" placeholder="SELECT * FRO..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6277" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6302" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6824:7035" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7462:7487" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7468:7476" placeholder="select name ..playerTable..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba-stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1447485176116" expanded="true" signature="1981:2015" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="1981:2028" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4234" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4235" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4241" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4242" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4248" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4249" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5100" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5113" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5594:5637" placeholder="SELECT name ..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6213" placeholder="SELECT * FRO..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6277" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6302" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6824:7035" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7462:7487" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7468:7476" placeholder="select name ..playerTable..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/searchByPlayer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba-stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1447485176116" expanded="true" signature="1981:2015" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="1981:2028" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4234" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4235" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4241" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4242" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4248" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4249" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5100" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5113" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5594:5637" placeholder="SELECT name ..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6213" placeholder="SELECT * FRO..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6277" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6302" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6824:7035" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7462:7487" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7468:7476" placeholder="select name ..playerTable..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/searchByPlayer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="41" selection-start-line="44" selection-start-column="41" selection-end-line="44" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba-stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1447485176116" expanded="true" signature="1981:2015" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="1981:2028" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4234" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4235" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4241" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4242" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4248" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4249" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5100" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5113" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5594:5637" placeholder="SELECT name ..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6213" placeholder="SELECT * FRO..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6277" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6302" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6824:7035" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7462:7487" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7468:7476" placeholder="select name ..playerTable..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/searchByPlayer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/playerInTeam.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.32258">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/playerStats.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-44.548386">
+          <caret line="66" column="51" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/filterPlayer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.73868775">
+          <caret line="12" column="114" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="114" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/filterResult.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49773756">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/searchByTeam.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2820513">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/searchHandler.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.354838">
+          <caret line="16" column="71" selection-start-line="16" selection-start-column="71" selection-end-line="16" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/searchByPlayer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.774194">
+          <caret line="18" column="102" selection-start-line="18" selection-start-column="102" selection-end-line="18" selection-end-column="102" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba-stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1447485176116" expanded="true" signature="1981:2015" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="1981:2028" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4234" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4235" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4241" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4242" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4248" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="4042:4249" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5100" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5075:5113" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="5594:5637" placeholder="SELECT name ..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6213" placeholder="SELECT * FRO..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6277" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6168:6302" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1447485176116" expanded="true" signature="6824:7035" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7462:7487" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1447485176116" expanded="true" signature="7468:7476" placeholder="select name ..playerTable..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/navBar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7051282">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

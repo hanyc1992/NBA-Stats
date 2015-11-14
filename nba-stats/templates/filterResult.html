@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	{% include "head.html" ignore missing%}
+	<body>
+        {% include "navBar.html" ignore missing%}
+		<div class="container col-md-10">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2>{{ playerNum }} Results Found</h2>
+				</div>
+
+				<div class="panel-body">
+                    <table class="table table-striped">
+                        <tbody>
+                            {% for item in players %}
+                                <tr>{% for itemCol in item %}
+                                    <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                {% endfor %}</tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+				</div>
+			</div>
+		</div>
+
+        <div class="container col-md-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+					<h3>The Constraints</h3>
+				</div>
+
+				<div class="panel-body">
+                    {% for cc in constraint %}
+                        <h4> {{ loop.index }}.   <small>{{ cc }}</small></h4>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+	</body>
+</html>

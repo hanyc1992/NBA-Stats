@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+	{% include "head.html" ignore missing%}
+	<body>
+        {% include "navBar.html" ignore missing%}
+		<div class="container col-md-10">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2>Initials</h2>
+				</div>
+
+				<div class="panel-body">
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" id="inita" class="active"><a data-toggle="tab" href="#aaa">A</a></li>
+                        <li role="presentation" id="initb"><a data-toggle="tab" href="#bbb">B</a></li>
+                        <li role="presentation" id="initc"><a data-toggle="tab" href="#ccc">C</a></li>
+                        <li role="presentation" id="initd"><a data-toggle="tab" href="#ddd">D</a></li>
+                        <li role="presentation" id="inite"><a data-toggle="tab" href="#eee">E</a></li>
+                        <li role="presentation" id="initf"><a data-toggle="tab" href="#fff">F</a></li>
+                        <li role="presentation" id="initg"><a data-toggle="tab" href="#ggg">G</a></li>
+                        <li role="presentation" id="inith"><a data-toggle="tab" href="#hhh">H</a></li>
+                        <li role="presentation" id="initi"><a data-toggle="tab" href="#iii">I</a></li>
+                        <li role="presentation" id="initj"><a data-toggle="tab" href="#jjj">J</a></li>
+                        <li role="presentation" id="initk"><a data-toggle="tab" href="#kkk">K</a></li>
+                        <li role="presentation" id="initl"><a data-toggle="tab" href="#lll">L</a></li>
+                        <li role="presentation" id="initm"><a data-toggle="tab" href="#mmm">M</a></li>
+                        <li role="presentation" id="initn"><a data-toggle="tab" href="#nnn">N</a></li>
+                        <li role="presentation" id="inito"><a data-toggle="tab" href="#ooo">O</a></li>
+                        <li role="presentation" id="initp"><a data-toggle="tab" href="#ppp">P</a></li>
+                        <li role="presentation" id="initq"><a data-toggle="tab" href="#qqq">Q</a></li>
+                        <li role="presentation" id="initr"><a data-toggle="tab" href="#rrr">R</a></li>
+                        <li role="presentation" id="inits"><a data-toggle="tab" href="#sss">S</a></li>
+                        <li role="presentation" id="initt"><a data-toggle="tab" href="#ttt">T</a></li>
+                        <li role="presentation" id="initu"><a data-toggle="tab" href="#uuu">U</a></li>
+                        <li role="presentation" id="initv"><a data-toggle="tab" href="#vvv">V</a></li>
+                        <li role="presentation" id="initw"><a data-toggle="tab" href="#www">W</a></li>
+                        <li role="presentation" id="initx"><a data-toggle="tab" href="#xxx">X</a></li>
+                        <li role="presentation" id="inity"><a data-toggle="tab" href="#yyy">Y</a></li>
+                        <li role="presentation" id="initz"><a data-toggle="tab" href="#zzz">Z</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="aaa" class="tab-pane fade in active">
+                            <table class="table table-striped" >
+                                <tbody>
+                                    {% for item in itemsa %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="bbb" class="tab-pane fade">
+                            <table class="table table-striped" >
+                                <tbody>
+                                    {% for item in itemsb %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="ccc" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsc %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="ddd" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsd %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="eee" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemse %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="fff" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsf %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="ggg" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsg %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="hhh" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsh %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="iii" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsi %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="jjj" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsj %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="kkk" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsk %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="lll" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsl %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="mmm" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsm %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="nnn" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsn %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="ooo" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemso %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="ppp" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsp %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="qqq" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsq %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="rrr" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsr %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="sss" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemss %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="ttt" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemst %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="uuu" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsu %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="vvv" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsv %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="www" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsw %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="xxx" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsx %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="yyy" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsy %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div id="zzz" class="tab-pane fade">
+                            <table class="table table-striped">
+                                <tbody>
+                                    {% for item in itemsz %}
+                                        <tr>{% for itemCol in item %}
+                                            <td><a href="/playerStats?playerId={{ itemCol.playerId }}&playerName={{ itemCol.name }}">{{ itemCol.name }}</a></td>
+                                        {% endfor %}</tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container col-md-2">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h2>Search</h2>
+				</div>
+
+				<div class="panel-body">
+                    <form action="/searchHandler" role="search" method="post">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search" name="searchContent" id="searchArea">
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+				</div>
+			</div>
+		</div>
+	</body>
+
+{#    <script>#}
+{#        $(document).ready(function(){#}
+{#            var cache = {};#}
+{#            $('#searchArea').autocomplete({#}
+{#                source: function(request, response){#}
+{#                    var search_term = request.term; // search_term is a json-like: {label: "l", value: "v"}#}
+{#                    if (search_term in cache){#}
+{#                        response( cache[search_term]);#}
+{#                        return;#}
+{#                    }#}
+{#                    $.getJSON("/autoSearch", request, function(result){#}
+{#                        cache[search_term] = result;#}
+{#                        response(result); // distinguish tags and stream names#}
+{#                    });#}
+{#                },#}
+{#                autofocus: true,#}
+{#                minLength: 2,#}
+{#                delay: 200#}
+{#            });#}
+{#        });#}
+{#    </script>#}
+</html>
