@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	{% include "head.html" ignore missing%}
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+
 	<body>
         {% include "navBar.html" ignore missing%}
 		<div class="container col-md-12">
@@ -35,6 +38,7 @@
 
                         <tbody>
                             {% for item in stats %}
+                                {% if item.season != None %}
                                 <tr>
                                     <td>{{ item.season }}</td>
                                     <td>{{ item.team }}</td>
@@ -54,17 +58,292 @@
                                     <td>{{ item.fouls }}</td>
                                     <td>{{ item.points }}</td>
                                 </tr>
+                                {% endif %}
                             {% endfor %}
                         </tbody>
                     </table>
 				</div>
 			</div>
 		</div>
+
+        <div id="carousel-example-generic" class="carousel slide container col-md-12" data-ride="carousel" >
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+                <li data-target="#carousel-example-generic" data-slide-to="3" class=""></li>
+                <li data-target="#carousel-example-generic" data-slide-to="4" class=""></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div id="chartPoints" class="container span8 offset2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="item">
+                    <div id="chartRebounds" class="container span8 offset2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="item">
+                    <div id="chartAssists" class="container span8 offset2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="item">
+                    <div id="chartSteals" class="container span8 offset2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <div class="item">
+                    <div id="chartBlocks" class="container span8 offset2" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+        </div>
 	</body>
 
     <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $('#chartPoints').highcharts({
+                title: {
+                    text: 'Points',
+                    x: -20 //center
+                },
+                subtitle: {
+                    text: '{{ playerName }}',
+                    x: -20
+                },
+                xAxis: {
+                    categories: ['2000-01', '2001-02', '2002-03', '2003-04', '2004-05', '2005-06', '2006-07',
+                        '2007-08', '2008-09', '2009-10', '2010-11', '2011-12', '2012-13', '2013-14', '2014-15']
+                },
+                yAxis: {
+                    title: {
+                        text: 'Points'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: 'points'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                series: [{
+                    name: '{{ playerName }}',
+                    data: [{{stats[0].exist}}?{{stats[0].points}}:null,{{stats[1].exist}}?{{stats[1].points}}:null,
+                        {{stats[2].exist}}?{{stats[2].points}}:null, {{stats[3].exist}}?{{stats[3].points}}:null,
+                        {{stats[4].exist}}?{{stats[4].points}}:null, {{stats[5].exist}}?{{stats[5].points}}:null,
+                        {{stats[6].exist}}?{{stats[6].points}}:null, {{stats[7].exist}}?{{stats[7].points}}:null,
+                        {{stats[8].exist}}?{{stats[8].points}}:null, {{stats[9].exist}}?{{stats[9].points}}:null,
+                        {{stats[10].exist}}?{{stats[10].points}}:null, {{stats[11].exist}}?{{stats[11].points}}:null,
+                        {{stats[12].exist}}?{{stats[12].points}}:null, {{stats[13].exist}}?{{stats[13].points}}:null,
+                        {{stats[14].exist}}?{{stats[14].points}}:null]
+                }]
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $('#chartRebounds').highcharts({
+                title: {
+                    text: 'Rebounds',
+                    x: -20 //center
+                },
+                subtitle: {
+                    text: '{{ playerName }}',
+                    x: -20
+                },
+                xAxis: {
+                    categories: ['2000-01', '2001-02', '2002-03', '2003-04', '2004-05', '2005-06', '2006-07',
+                        '2007-08', '2008-09', '2009-10', '2010-11', '2011-12', '2012-13', '2013-14', '2014-15']
+                },
+                yAxis: {
+                    title: {
+                        text: 'Rebounds'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: 'rebounds'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                series: [{
+                    name: '{{ playerName }}',
+                    data: [{{stats[0].exist}}?{{stats[0].totalRebounds}}:null,{{stats[1].exist}}?{{stats[1].totalRebounds}}:null,
+                        {{stats[2].exist}}?{{stats[2].totalRebounds}}:null, {{stats[3].exist}}?{{stats[3].totalRebounds}}:null,
+                        {{stats[4].exist}}?{{stats[4].totalRebounds}}:null, {{stats[5].exist}}?{{stats[5].totalRebounds}}:null,
+                        {{stats[6].exist}}?{{stats[6].totalRebounds}}:null, {{stats[7].exist}}?{{stats[7].totalRebounds}}:null,
+                        {{stats[8].exist}}?{{stats[8].totalRebounds}}:null, {{stats[9].exist}}?{{stats[9].totalRebounds}}:null,
+                        {{stats[10].exist}}?{{stats[10].totalRebounds}}:null, {{stats[11].exist}}?{{stats[11].totalRebounds}}:null,
+                        {{stats[12].exist}}?{{stats[12].totalRebounds}}:null, {{stats[13].exist}}?{{stats[13].totalRebounds}}:null,
+                        {{stats[14].exist}}?{{stats[14].totalRebounds}}:null]
+                }]
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $('#chartAssists').highcharts({
+                title: {
+                    text: 'Assists',
+                    x: -20 //center
+                },
+                subtitle: {
+                    text: '{{ playerName }}',
+                    x: -20
+                },
+                xAxis: {
+                    categories: ['2000-01', '2001-02', '2002-03', '2003-04', '2004-05', '2005-06', '2006-07',
+                        '2007-08', '2008-09', '2009-10', '2010-11', '2011-12', '2012-13', '2013-14', '2014-15']
+                },
+                yAxis: {
+                    title: {
+                        text: 'Assists'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: 'assists'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                series: [{
+                    name: '{{ playerName }}',
+                    data: [{{stats[0].exist}}?{{stats[0].assists}}:null,{{stats[1].exist}}?{{stats[1].assists}}:null,
+                        {{stats[2].exist}}?{{stats[2].assists}}:null, {{stats[3].exist}}?{{stats[3].assists}}:null,
+                        {{stats[4].exist}}?{{stats[4].assists}}:null, {{stats[5].exist}}?{{stats[5].assists}}:null,
+                        {{stats[6].exist}}?{{stats[6].assists}}:null, {{stats[7].exist}}?{{stats[7].assists}}:null,
+                        {{stats[8].exist}}?{{stats[8].assists}}:null, {{stats[9].exist}}?{{stats[9].assists}}:null,
+                        {{stats[10].exist}}?{{stats[10].assists}}:null, {{stats[11].exist}}?{{stats[11].assists}}:null,
+                        {{stats[12].exist}}?{{stats[12].assists}}:null, {{stats[13].exist}}?{{stats[13].assists}}:null,
+                        {{stats[14].exist}}?{{stats[14].assists}}:null]
+                }]
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $('#chartSteals').highcharts({
+                title: {
+                    text: 'Steals',
+                    x: -20 //center
+                },
+                subtitle: {
+                    text: '{{ playerName }}',
+                    x: -20
+                },
+                xAxis: {
+                    categories: ['2000-01', '2001-02', '2002-03', '2003-04', '2004-05', '2005-06', '2006-07',
+                        '2007-08', '2008-09', '2009-10', '2010-11', '2011-12', '2012-13', '2013-14', '2014-15']
+                },
+                yAxis: {
+                    title: {
+                        text: 'Steals'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: 'steals'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                series: [{
+                    name: '{{ playerName }}',
+                    data: [{{stats[0].exist}}?{{stats[0].steals}}:null,{{stats[1].exist}}?{{stats[1].steals}}:null,
+                        {{stats[2].exist}}?{{stats[2].steals}}:null, {{stats[3].exist}}?{{stats[3].steals}}:null,
+                        {{stats[4].exist}}?{{stats[4].steals}}:null, {{stats[5].exist}}?{{stats[5].steals}}:null,
+                        {{stats[6].exist}}?{{stats[6].steals}}:null, {{stats[7].exist}}?{{stats[7].steals}}:null,
+                        {{stats[8].exist}}?{{stats[8].steals}}:null, {{stats[9].exist}}?{{stats[9].steals}}:null,
+                        {{stats[10].exist}}?{{stats[10].steals}}:null, {{stats[11].exist}}?{{stats[11].steals}}:null,
+                        {{stats[12].exist}}?{{stats[12].steals}}:null, {{stats[13].exist}}?{{stats[13].steals}}:null,
+                        {{stats[14].exist}}?{{stats[14].steals}}:null]
+                }]
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $('#chartBlocks').highcharts({
+                title: {
+                    text: 'Blocks',
+                    x: -20 //center
+                },
+                subtitle: {
+                    text: '{{ playerName }}',
+                    x: -20
+                },
+                xAxis: {
+                    categories: ['2000-01', '2001-02', '2002-03', '2003-04', '2004-05', '2005-06', '2006-07',
+                        '2007-08', '2008-09', '2009-10', '2010-11', '2011-12', '2012-13', '2013-14', '2014-15']
+                },
+                yAxis: {
+                    title: {
+                        text: 'Blocks'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: 'blocks'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                series: [{
+                    name: '{{ playerName }}',
+                    data: [{{stats[0].exist}}?{{stats[0].blocks}}:null,{{stats[1].exist}}?{{stats[1].blocks}}:null,
+                        {{stats[2].exist}}?{{stats[2].blocks}}:null, {{stats[3].exist}}?{{stats[3].blocks}}:null,
+                        {{stats[4].exist}}?{{stats[4].blocks}}:null, {{stats[5].exist}}?{{stats[5].blocks}}:null,
+                        {{stats[6].exist}}?{{stats[6].blocks}}:null, {{stats[7].exist}}?{{stats[7].blocks}}:null,
+                        {{stats[8].exist}}?{{stats[8].blocks}}:null, {{stats[9].exist}}?{{stats[9].blocks}}:null,
+                        {{stats[10].exist}}?{{stats[10].blocks}}:null, {{stats[11].exist}}?{{stats[11].blocks}}:null,
+                        {{stats[12].exist}}?{{stats[12].blocks}}:null, {{stats[13].exist}}?{{stats[13].blocks}}:null,
+                        {{stats[14].exist}}?{{stats[14].blocks}}:null]
+                }]
+            });
         });
     </script>
 </html>

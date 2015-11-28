@@ -11,7 +11,8 @@ class Player:
 
 
 class PlayerStats:
-    def __init__(self, playerName,season,team,games,gamesStarted,minutes,fieldGoalPercentage,threePointsPercentage,freeThrowPercentage,offensiveRebounds,defensiveRebounds,totalRebounds,assists,steals,blocks,turnovers,fouls,points):
+    def __init__(self, exist,playerName,season,team,games,gamesStarted,minutes,fieldGoalPercentage,threePointsPercentage,freeThrowPercentage,offensiveRebounds,defensiveRebounds,totalRebounds,assists,steals,blocks,turnovers,fouls,points):
+        self.exist = exist
         self.playerName = playerName
         self.season = season
         self.team = team
@@ -142,15 +143,26 @@ def filterPlayer():
 
 @app.route('/playerStats', methods=['GET'])
 def playerStats():
+    years = ["00_01","01_02","02_03","03_04","04_05","05_06","06_07","07_08","08_09","09_10","10_11","11_12","12_13","13_14","14_15"]
+    index = 0
+
     playerId = request.args.get('playerId')
     playerName = request.args.get('playerName')
-    items = g.db.execute("SELECT * FROM stats WHERE playerId = ?", (playerId,))
     stats = []
+    empty = PlayerStats(0,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None,None)
+    for count in range(0,len(years)):
+        stats.append(empty)
+
+    items = g.db.execute("SELECT * FROM stats WHERE playerId = ?", (playerId,))
     for item in items:
         playerId,position,year,age,teamId,games,gamesStarted,minutes,fieldGoal,fieldGoalAttempts,fieldGoalPercentage,threePoint,threePointAttempts,threePointsPercentage,twoPoint,twoPointAttempts,twoPointsPercentage,effectiveFieldGoalPercentage,freeThrow,freeThrowAttempts,freeThrowPercentage,offensiveRebounds,defensiveRebounds,totalRebounds,assists,steals,blocks,turnovers,fouls,points = item
         teamName = g.db.execute("SELECT name FROM teamTable WHERE teamId = ?", (teamId,)).fetchall()[0][0]
-        info = PlayerStats(playerName,year,teamName,games,gamesStarted,minutes,fieldGoalPercentage,threePointsPercentage,freeThrowPercentage,offensiveRebounds,defensiveRebounds,totalRebounds,assists,steals,blocks,turnovers,fouls,points)
-        stats.append(info)
+        info = PlayerStats(1,playerName,year,teamName,games,gamesStarted,minutes,fieldGoalPercentage,threePointsPercentage,freeThrowPercentage,offensiveRebounds,defensiveRebounds,totalRebounds,assists,steals,blocks,turnovers,fouls,points)
+        # stats.append(info)
+        stats[years.index(year)] = info
+
+
+
     return render_template('playerStats.html', stats=stats, playerName=playerName, page="playerStats")
 
 
