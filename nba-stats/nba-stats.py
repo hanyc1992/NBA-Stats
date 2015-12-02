@@ -191,7 +191,7 @@ def playerInTeam():
             players[-1].append(Player(item[0], item[1]))
         else:
             players.append([(Player(item[0], item[1])),])
-    return render_template('playerInTeam.html', players=players, page="playerInTeam")
+    return render_template('playerInTeam.html', players=players, page="playerInTeam", team=team, season=dbToDisplaySeason(season))
 
 
 @app.route('/searchByPlayer', methods=['GET'])
