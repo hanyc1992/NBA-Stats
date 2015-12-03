@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a4d18a6c-a2fe-477e-89cb-36da8b5cc5f1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba-stats/nba-stats.py" afterPath="$PROJECT_DIR$/nba-stats/nba-stats.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nba-stats/templates/playerStats.html" afterPath="$PROJECT_DIR$/nba-stats/templates/playerStats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="nba-stats.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,7 +17,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/nba-stats$nba_stats.coverage" NAME="nba-stats Coverage Results" MODIFIED="1449109653373" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nba-stats" />
+    <SUITE FILE_PATH="coverage/nba-stats$nba_stats.coverage" NAME="nba-stats Coverage Results" MODIFIED="1449114977394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/nba-stats" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -28,29 +28,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="nba-stats.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nba-stats.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nba-stats/nba-stats.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5190713">
+              <caret line="78" column="117" selection-start-line="78" selection-start-column="117" selection-end-line="78" selection-end-column="117" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <marker date="1449108143627" expanded="true" signature="2014:2048" placeholder="SELECT DISTI..playerTable..." />
-                <marker date="1449108143627" expanded="true" signature="2806:2999" placeholder="SELECT DISTI..playerTable..." />
-                <marker date="1449108143627" expanded="true" signature="4918:4956" placeholder="SELECT * FRO..stats..." />
-                <marker date="1449108143627" expanded="true" signature="5422:5465" placeholder="SELECT name ..teamTable..." />
-                <marker date="1449108143627" expanded="true" signature="6043:6152" placeholder="SELECT DISTI..teamTable..." />
-                <marker date="1449108143627" expanded="true" signature="6699:6910" placeholder="SELECT DISTI..playerTable..." />
-                <marker date="1449108143627" expanded="true" signature="7382:7407" placeholder="SELECT * FRO..playerTable..." />
+                <marker date="1449114977380" expanded="true" signature="2014:2048" placeholder="SELECT DISTI..playerTable..." />
+                <marker date="1449114977380" expanded="true" signature="2852:3045" placeholder="SELECT DISTI..playerTable..." />
+                <marker date="1449114977380" expanded="true" signature="4964:5002" placeholder="SELECT * FRO..stats..." />
+                <marker date="1449114977380" expanded="true" signature="5468:5511" placeholder="SELECT name ..teamTable..." />
+                <marker date="1449114977380" expanded="true" signature="6089:6198" placeholder="SELECT DISTI..teamTable..." />
+                <marker date="1449114977380" expanded="true" signature="6745:6956" placeholder="SELECT DISTI..playerTable..." />
+                <marker date="1449114977380" expanded="true" signature="7428:7453" placeholder="SELECT * FRO..playerTable..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="playerStats.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="playerStats.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nba-stats/templates/playerStats.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23076923">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="109" column="35" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
               <folding />
             </state>
@@ -65,8 +65,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/nba-stats/nba-stats.py" />
         <option value="$PROJECT_DIR$/nba-stats/templates/playerStats.html" />
+        <option value="$PROJECT_DIR$/nba-stats/nba-stats.py" />
       </list>
     </option>
   </component>
@@ -106,6 +106,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -159,7 +160,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,6 +256,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Attests">
@@ -392,26 +398,26 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1850" height="1098" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24971941" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25308642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -437,22 +443,47 @@
           <caret line="205" column="0" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <marker date="1449108143627" expanded="true" signature="2014:2048" placeholder="SELECT DISTI..playerTable..." />
-            <marker date="1449108143627" expanded="true" signature="2806:2999" placeholder="SELECT DISTI..playerTable..." />
-            <marker date="1449108143627" expanded="true" signature="4918:4956" placeholder="SELECT * FRO..stats..." />
-            <marker date="1449108143627" expanded="true" signature="5422:5465" placeholder="SELECT name ..teamTable..." />
-            <marker date="1449108143627" expanded="true" signature="6043:6152" placeholder="SELECT DISTI..teamTable..." />
-            <marker date="1449108143627" expanded="true" signature="6699:6910" placeholder="SELECT DISTI..playerTable..." />
-            <marker date="1449108143627" expanded="true" signature="7382:7407" placeholder="SELECT * FRO..playerTable..." />
+            <marker date="1449114977380" expanded="true" signature="2014:2048" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1449114977380" expanded="true" signature="2852:3045" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1449114977380" expanded="true" signature="4964:5002" placeholder="SELECT * FRO..stats..." />
+            <marker date="1449114977380" expanded="true" signature="5468:5511" placeholder="SELECT name ..teamTable..." />
+            <marker date="1449114977380" expanded="true" signature="6089:6198" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1449114977380" expanded="true" signature="6745:6956" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1449114977380" expanded="true" signature="7428:7453" placeholder="SELECT * FRO..playerTable..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nba-stats/templates/playerStats.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23076923">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba-stats/templates/playerStats.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="109" column="35" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nba-stats/nba-stats.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5190713">
+          <caret line="78" column="117" selection-start-line="78" selection-start-column="117" selection-end-line="78" selection-end-column="117" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <marker date="1449114977380" expanded="true" signature="2014:2048" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1449114977380" expanded="true" signature="2852:3045" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1449114977380" expanded="true" signature="4964:5002" placeholder="SELECT * FRO..stats..." />
+            <marker date="1449114977380" expanded="true" signature="5468:5511" placeholder="SELECT name ..teamTable..." />
+            <marker date="1449114977380" expanded="true" signature="6089:6198" placeholder="SELECT DISTI..teamTable..." />
+            <marker date="1449114977380" expanded="true" signature="6745:6956" placeholder="SELECT DISTI..playerTable..." />
+            <marker date="1449114977380" expanded="true" signature="7428:7453" placeholder="SELECT * FRO..playerTable..." />
+          </folding>
         </state>
       </provider>
     </entry>

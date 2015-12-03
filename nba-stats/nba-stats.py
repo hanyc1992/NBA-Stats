@@ -76,7 +76,7 @@ def searchHandler():
     itemsFilter = []
     # already ignore case
     for xx in items:
-        if searchContent.lower() in [x.lower() for x in xx[1].split()]:
+        if (searchContent.lower() in [x.lower() for x in xx[1].split()]) or (searchContent.lower() == xx[1].lower()):
             itemsFilter.append(xx)
 
     players = [[]]
