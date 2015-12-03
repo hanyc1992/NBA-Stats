@@ -186,18 +186,27 @@ def playerInTeam():
 @app.route('/searchByPlayer', methods=['GET'])
 def searchByPlayer():
     items = g.db.execute('SELECT * FROM playerTable').fetchall()
+    item_alph = []
     item_list = []
     for i in range(26):
         item_list.append([[]]);
+        item_alph.append([]);
 
 
     for item in items:
         iname = item[1]
         init_num = ord(iname[0])-ord('A')
-        if len(item_list[init_num][-1]) < COLUMN_NUM:
-            item_list[init_num][-1].append(Player(item[0], item[1]))
-        else:
-            item_list[init_num].append([(Player(item[0], item[1])),])
+        item_alph[init_num].append(Player(item[0], item[1]))
+
+    for i in range(26):
+        item_alph[i].sort(key = lambda x : x.name)
+        for item in item_alph[i]:
+            if len(item_list[i][-1]) < COLUMN_NUM:
+                item_list[i][-1].append(item)
+            else:
+                item_list[i].append([item,])
+
+        
 
     return render_template('searchByPlayer.html', itemsa=item_list[0], itemsb=item_list[1], itemsc=item_list[2], itemsd=item_list[3],
                            itemse=item_list[4], itemsf=item_list[5], itemsg=item_list[6], itemsh=item_list[7], itemsi=item_list[8], itemsj=item_list[9],
