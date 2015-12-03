@@ -10,9 +10,10 @@
 				</div>
 
 				<div class="panel-body">
-                    <form role="form" class="form-inline" action="/filterResult?season={{ season }}" method="post">
+                    <form role="form"  class="form-inline" action="/filterResult?season={{ season }}" method="post">
 {#                        constraint 1#}
-                        <div class="form-group col-sm-4">
+                        <div id = "filterform" >
+                        <div class="form-group col-sm-3">
                             <label for="attribute1">Attribute:</label>
                             <select class="form-control" id="attribute1" name="attribute1">
                                 <option value="points">Points</option>
@@ -22,7 +23,7 @@
                                 <option value="blocks">Blocks</option>
                             </select>
                         </div>
-                        <div class="form-group col-sm-4">
+                        <div class="form-group col-sm-3">
                             <label for="compare1">Compare:</label>
                             <select class="form-control" id="compare1" name="compare1">
                                 <option value=">=">Great Than</option>
@@ -33,8 +34,13 @@
                             <label for="stats1">Stats:</label>
                             <input type="text" class="form-control" placeholder="Enter a number" id="stats1" name="stats1">
                         </div>
+                        <div class="form-group col-sm-2">
+                            <p id = "add_filter" class="btn btn-default pull-left">Add Filter</p>
+                        </div>
+                        <input type="text" id="nval" name = "nval" value = "1" style="display:none">
+                        </div>
 {#                        constraint 2#}
-                        <div class="form-group col-sm-4">
+                        <!-- <div class="form-group col-sm-4">
                             <label for="attribute2">Attribute:</label>
                             <select class="form-control" id="attribute2" name="attribute2">
                                 <option value="points">Points</option>
@@ -76,8 +82,8 @@
                         <div class="form-group col-sm-4">
                             <label for="stats3">Stats:</label>
                             <input type="text" class="form-control" placeholder="Enter a number" id="stats3" name="stats3">
-                        </div>
-
+                        </div> -->
+                        
                         <button type="submit" class="btn btn-default pull-left">Submit</button>
                     </form>
 				</div>
@@ -109,4 +115,23 @@
             </div>
 		</div>
 	</body>
+
+<script>
+var n = 1
+    $("#add_filter").click(function(){
+        n = n+1;
+        $("#filterform").prepend("<div id=\"appenddiv3\" class=\"form-group col-sm-4\"></div>");
+        $("#appenddiv3").append("<label for=\"stats1\">Stats:&nbsp</label>");
+        $("#appenddiv3").append("<input type=\"text\" class=\"form-control\" placeholder=\"Enter a number\" id=\"stats"+n+"\" name=\"stats"+n+"\"><br>");
+
+        $("#filterform").prepend("<div id=\"appenddiv2\" class=\"form-group col-sm-3\"></div>");
+        $("#appenddiv2").append("<label for=\"compare1\">Compare:&nbsp</label>");
+        $("#appenddiv2").append("<select class=\"form-control\" id=\"compare"+n+"\" name=\"compare"+n+"\"><option value=\">=\">Great Than</option><option value=\"<=\">Less Than</option></select><br>");
+        $("#filterform").prepend("<div id=\"appenddiv1\" class=\"form-group col-sm-3\"></div>");
+        $("#appenddiv1").append("<label for=\"attribute1\">Attribute:&nbsp</label>");
+        $("#appenddiv1").append("<select class=\"form-control\" id=\"attribute"+n+"\" name=\"attribute"+n+"\"><option value=\"points\">Points</option><option value=\"totalRebounds\">Rebounds</option><option value=\"assists\">Assists</option><option value=\"steals\">Steals</option><option value=\"blocks\">Blocks</option></select><br>");
+        $("#nval").attr("value", n);
+    });
+  </script>
+
 </html>
