@@ -1,5 +1,6 @@
 import sqlite3
 import os.path
+import re
 from flask import Flask, request, session, g, redirect, url_for, abort, \
     render_template, flash
 
@@ -74,9 +75,10 @@ def searchHandler():
 
     items = g.db.execute("SELECT DISTINCT * FROM playerTable").fetchall()
     itemsFilter = []
+    itemelse = []
     # already ignore case
     for xx in items:
-        if (searchContent.lower() in [x.lower() for x in xx[1].split()]) or (searchContent.lower() == xx[1].lower()):
+        if (searchContent.lower() in [x.lower() for x in xx[1].split()]) or (searchContent.lower() == xx[1].lower()) or re.compile(searchContent.lower()).search(xx[1].lower()) != None:
             itemsFilter.append(xx)
 
     players = [[]]
